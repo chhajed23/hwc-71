@@ -72,7 +72,7 @@ export default class SearchScreen extends React.Component {
         />
         <TouchableOpacity
           style={styles.submitButton}
-          onPress={this.submitStory}
+          onPress={()=>{this.submitStory,Alert.alert("your story has been submitted")}}
         >
           <Text style={styles.submitText}>Submit</Text>
         </TouchableOpacity>
